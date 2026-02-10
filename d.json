@@ -7,19 +7,22 @@
   "id": "rd-new-geoparquet",
   "geometry": null,
   "properties": {
-    "proj:bbox": [
-      81752.25619912107,
-      442480.8651638546,
-      87679.68324598923,
-      449730.6420819167
-    ],
+    "proj:geometry": {
+      "coordinates": "EPSG:28992",
+      "b_box": [
+        81752.25619912107,
+        442480.8651638546,
+        87679.68324598923,
+        449730.6420819167
+      ]
+    }
     "collection": "rd-new-collection",
     "datetime": "2026-02-10T09:18:09.877018Z"
   },
   "links": [],
   "assets": {
     "data": {
-      "href": "d.parquet",
+      "href": "https://hugoledoux.github.io/test44/d.parquet",
       "type": "application/vnd.apache.parquet",
       "title": "GeoParquet data (EPSG:28992)",
       "roles": [
