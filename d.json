@@ -5,6 +5,7 @@
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ],
   "id": "rd-new-geoparquet",
+  "collection": "rd-new-collection",
   "geometry": null,
   "properties": {
     "proj:geometry": {
@@ -16,9 +17,14 @@
         449730.6420819167
       ]
     }
-    "collection": "rd-new-collection",
     "datetime": "2026-02-10T09:18:09.877018Z"
   },
+  "bbox": [
+        81752.25619912107,
+        442480.8651638546,
+        87679.68324598923,
+        449730.6420819167
+      ],
   "links": [],
   "assets": {
     "data": {
