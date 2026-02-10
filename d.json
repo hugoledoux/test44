@@ -4,36 +4,35 @@
   "stac_extensions": [
     "https://stac-extensions.github.io/projection/v2.0.0/schema.json"
   ],
-  "id": "rd-new-geoparquet",
-  "collection": "rd-new-collection",
-  "geometry": null,
-  "properties": {
-    "proj:geometry": {
-      "coordinates": "EPSG:28992",
-      "b_box": [
-        81752.25619912107,
-        442480.8651638546,
-        87679.68324598923,
-        449730.6420819167
-      ]
-    }
-    "datetime": "2026-02-10T09:18:09.877018Z"
+  "id": "delft-buildings-geoparquet",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [[
+      [4.3152, 51.9700],
+      [4.4024, 51.9700],
+      [4.4024, 52.0352],
+      [4.3152, 52.0352],
+      [4.3152, 51.9700]
+    ]]
   },
-  "bbox": [
-        81752.25619912107,
-        442480.8651638546,
-        87679.68324598923,
-        449730.6420819167
-      ],
+  "bbox": [4.3152, 51.9700, 4.4024, 52.0352],
+  "properties": {
+    "datetime": "2026-02-10T09:18:09.877018Z",
+    "proj:epsg": 28992,
+    "proj:bbox": [
+      81752.25619912107,
+      442480.8651638546,
+      87679.68324598923,
+      449730.6420819167
+    ]
+  },
   "links": [],
   "assets": {
     "data": {
       "href": "https://hugoledoux.github.io/test44/d.parquet",
       "type": "application/vnd.apache.parquet",
-      "title": "GeoParquet data (EPSG:28992)",
-      "roles": [
-        "data"
-      ]
+      "title": "Buildings in Delft (EPSG:28992)",
+      "roles": ["data"]
     }
   }
 }
